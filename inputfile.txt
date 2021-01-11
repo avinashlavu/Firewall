@@ -1,0 +1,23 @@
+# Input file - requires below 4 fields seperated by comma : 
+#
+# <DESTINATION_IP>,<DESTINATION_PORT>,<DESTINATION_HOST_SSH_USERNAME>,<DESTINATION_HOST_SSH_PASSWORD>
+# 
+# Note: Optional Fields 
+#	1) <DESTINATION_HOST_SSH_USERNAME> 
+#	2) <DESTINATION_HOST_SSH_PASSWORD> 
+# 	These SSH details are to check if destination host has the required port listening. If it doesnt, the tool uses ssh credentials 
+#	and mimics server port listen on the destination host. 
+#	Since it is optional you may leave it blank - however make sure there are four fields even if it is blank
+#
+# eg:
+#	10.248.66.37,9043,ssh_user,ssh_password
+#	10.248.66.37,9043,,
+
+
+10.248.72.26,9043,wasadmin,passwd
+10.248.72.26,19043,wasadmin,passwd
+10.248.72.26,29043,wasadmin,passwd
+10.248.72.26,39043,,
+10.248.66.37,9043,wasadmin,passwd
+10.248.66.37,19043,,
+10.248.66.37,29043,wasadmin,passwd
